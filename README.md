@@ -81,7 +81,7 @@ We have installed Filebeat on Web-1, Web-2, and Web-3. This will facilitate moni
 
 These Beats allow us to collect information from each machine, including data on ssh attempts, system login events, and sudo commands. Filebeat puts all of this information into a dashboard that allows us to quickly analyze activity. See below for an example: 
 
-![image](
+![image](https://github.com/zacharycook1600/CS-Bootcamp-Project1/blob/main/Kibana_Dashboard.PNG)
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
