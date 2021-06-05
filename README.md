@@ -27,7 +27,7 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 
 
 The configuration details of each machine may be found below.
-_Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
+
 
 | Name       | Function       | IP Address | Operating System |
 |------------|----------------|------------|------------------|
@@ -41,19 +41,19 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 
 The machines on the internal network are not exposed to the public Internet. 
 
-Only the _____ machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-- _TODO: Add whitelisted IP addresses_
+Only the Jump-Box machine can accept connections from the Internet. Access to this machine is only allowed from the following IP address: 69.255.45.REDACTED
 
-Machines within the network can only be accessed by _____.
-- _TODO: Which machine did you allow to access your ELK VM? What was its IP address?_
+Machines within the network can only be accessed through the Jump-Box machine via port 22 and SSH. However, the Elk-Server may accessed through port 5601 through its own public IP address (20.44.125.232) by its Kibana application.
 
 A summary of the access policies in place can be found in the table below.
 
-| Name     | Publicly Accessible | Allowed IP Addresses |
-|----------|---------------------|----------------------|
-| Jump Box | Yes/No              | 10.0.0.1 10.0.0.2    |
-|          |                     |                      |
-|          |                     |                      |
+| Name       | Publicly Accessible | Allowed IP Addresses |
+|------------|---------------------|----------------------|
+| Jump-Box   | Yes                 | 69.255.45.REDACTED   |
+| Elk-Server | Yes                 | 69.255.45.REDACTED   |
+| Web-1      | No                  | N/A                  |
+| Web-2      | No                  | N/A                  |
+| Web-3      | No                  | N/A                  |
 
 ### Elk Configuration
 
