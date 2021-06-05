@@ -1,2 +1,2 @@
-# CS-Bootcamp-Project-1
+# CS-Bootcamp-Project1
 First project for cybersecurity bootcamp
